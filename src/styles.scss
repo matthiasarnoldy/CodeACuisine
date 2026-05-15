@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@use "./app/styles/abstract/mixins" as m;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    @include m.flexC($justify: flex-start)
+}
+
+body {
+    width: 100%;
+    max-width: 1920px;
+    min-height: 100vh;
+}
+
+.header__logo--dark {
+    display: none;
+}
+
+.header__logo--light {
+    display: none;
+}
+
+body.home {
+    height: 100vh;
+    background-color: ;
+
+    .header__logo--light {
+        display: block;
+    }
+}

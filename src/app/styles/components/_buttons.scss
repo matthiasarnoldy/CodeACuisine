@@ -1,0 +1,34 @@
+@use "../abstract/mixins" as m;
+@use "../abstract/variables" as v;
+
+.button {
+    font-family: "Quicksand";
+    color: v.$secondaryGreen;
+    border: none;
+    outline: none;
+    transition: all 100ms ease-out;
+    cursor: pointer;
+}
+
+.button--primary {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 16px 26px;
+
+    &Green {
+        color: v.$primaryCream;
+        background-color: v.$primaryGreen;
+
+        &:hover {
+            background-color: #055E05;
+        }
+    }
+
+    &Cream {
+        background-color: v.$primaryCream;
+
+        &:hover {
+            background-color: v.$secondaryCream;
+        }
+    }
+}

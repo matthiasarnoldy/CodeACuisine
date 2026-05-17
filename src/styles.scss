@@ -1,4 +1,6 @@
+@use "./app/styles/abstract/index";
 @use "./app/styles/abstract/mixins" as m;
+@use "./app/styles/abstract/variables" as v;
 
 * {
     padding: 0;
@@ -26,8 +28,10 @@ body {
 }
 
 body.home {
+    position: relative;
     height: 100vh;
-    background-color: ;
+    padding: 0 68px;
+    background-color: v.$primaryGreen;
 
     .header__logo--light {
         display: block;

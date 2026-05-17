@@ -1,0 +1,17 @@
+@use "../../../styles/abstract/mixins" as m;
+@use "../../../styles/abstract/variables" as v;
+
+.hero__headline {
+  padding: 112px 0 64px;
+
+  h3 {
+    padding-bottom: 8px;
+  }
+}
+
+.hero__img {
+  position: absolute;
+  top: 0;
+  right: 48px;
+  height: 100vh;
+}

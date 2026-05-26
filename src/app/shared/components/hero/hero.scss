@@ -3,9 +3,32 @@
 
 .hero__headline {
   padding: 112px 0 64px;
+  overflow-wrap: break-word;
+
+  @include m.breakpoint(1080px) {
+    width: 300px;
+  }
 
   h3 {
     padding-bottom: 8px;
+  }
+}
+
+.hero__cookbook {
+  position: absolute;
+  top: 78%;
+  left: 64px;
+  @include m.flexR($gap: 16px);
+  overflow-wrap: break-word;
+
+  @include m.breakpoint(1080px) {
+    width: 300px;
+    align-items: flex-start;
+    flex-direction: column;
+
+    h4 {
+      padding: 0 16px;
+    }
   }
 }
 
@@ -14,4 +37,12 @@
   top: 0;
   right: 48px;
   height: 100vh;
+
+  @include m.breakpoint(1220px) {
+    right: -80px;
+  }
+
+  @include m.breakpoint(800px) {
+    right: -180px;
+  }
 }

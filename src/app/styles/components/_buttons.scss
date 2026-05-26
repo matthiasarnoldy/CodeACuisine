@@ -1,5 +1,13 @@
 @use "../abstract/mixins" as m;
 @use "../abstract/variables" as v;
+@use "../abstract/icons" as i;
+
+$btn-icons: (
+    'add': ('w': 24px, 'h': 24px),
+    'arrow-dropdown': ('w': 10px, 'h': 5px),
+    'arrow-left': ('w': 22px, 'h': 15px),
+    'arrow-right': ('w': 26px, 'h': 15px),
+);
 
 .button {
     font-family: "Quicksand";
@@ -29,6 +37,59 @@
 
         &:hover {
             background-color: v.$secondaryCream;
+        }
+    }
+}
+
+.button--secondary {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px;
+    @include m.flexR($gap: 10px);
+
+    &Green {
+        color: v.$primaryGreen;
+        background-color: transparent;
+
+        &:hover {
+            background-color: rgba(v.$primaryGreen, 0.1);
+        }
+    }
+
+    &Cream {
+        color: v.$primaryCream;
+        background-color: transparent;
+
+        &:hover {
+            background-color: rgba(v.$secondaryCream, 0.2);
+        }
+    }
+}
+
+@each $key, $data in $btn-icons {
+    .button__#{$key}--green {
+        &::after {
+            content: '';
+            display: inline-block;
+            background-image: url('#{i.icon($key, "%23396039")}');
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            width: map-get($data, 'w');
+            height: map-get($data, 'h');
+        }
+    }
+}
+
+@each $key, $data in $btn-icons {
+    .button__#{$key}--cream {
+        &::after {
+            content: '';
+            display: inline-block;
+            background-image: url('#{i.icon($key, "%23FAF0E6")}');
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            width: map-get($data, 'w');
+            height: map-get($data, 'h');
         }
     }
 }

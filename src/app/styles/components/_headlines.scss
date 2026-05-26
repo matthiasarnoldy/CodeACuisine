@@ -16,3 +16,11 @@ h3 {
     line-height: 1.0;
     color: #F5F5DC;
 }
+
+h4 {
+    font-family: "Ubuntu";
+    font-size: clamp(24px, 0.5vw + 22.4px, 32px);
+    font-weight: 500;
+    line-height: 1.0;
+    color: v.$primaryCream;
+}

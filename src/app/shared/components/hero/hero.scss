@@ -9,6 +9,11 @@
     width: 300px;
   }
 
+  @include m.breakpoint(600px) {
+    padding: 48px 0 16px;
+    width: 240px;
+  }
+
   h3 {
     padding-bottom: 8px;
   }
@@ -30,6 +35,21 @@
       padding: 0 16px;
     }
   }
+
+  @include m.breakpoint(768px) {
+    left: 32px;
+  }
+
+  @include m.breakpoint(600px) {
+    width: 240px;
+    left: 16px;
+    align-items: flex-start;
+    flex-direction: column;
+
+    h4 {
+      padding: 0;
+    }
+  }
 }
 
 .hero__img {
@@ -43,6 +63,6 @@
   }
 
   @include m.breakpoint(800px) {
-    right: -180px;
+    right: -240px;
   }
 }

@@ -31,8 +31,16 @@ body.home {
     position: relative;
     height: 100vh;
     padding: 0 68px;
-    overflow-x: hidden;
+    overflow: hidden;
     background-color: v.$primaryGreen;
+
+    @include m.breakpoint(768px) {
+        padding: 0 32px;
+    }
+
+    @include m.breakpoint(600px) {
+        padding: 0 16px;
+    }
 
     .header__logo--light {
         display: block;

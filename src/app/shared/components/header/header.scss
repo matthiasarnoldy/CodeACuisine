@@ -1,3 +1,9 @@
+@use "../../../styles/abstract/mixins" as m;
+
 .header {
     padding: 40px 0;
+
+    @include m.breakpoint(600px) {
+        padding: 12px 0;
+    }
 }

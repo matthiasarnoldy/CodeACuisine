@@ -21,7 +21,7 @@
 
 .hero__cookbook {
   position: absolute;
-  top: 78%;
+  bottom: 64px;
   left: 64px;
   @include m.flexR($gap: 16px);
   overflow-wrap: break-word;
@@ -45,10 +45,6 @@
     left: 16px;
     align-items: flex-start;
     flex-direction: column;
-
-    h4 {
-      padding: 0;
-    }
   }
 }
 
@@ -64,5 +60,17 @@
 
   @include m.breakpoint(800px) {
     right: -240px;
+  }
+
+  @include m.breakpoint(600px) {
+    right: -28vh;
+  }
+
+  @include m.breakpoint(430px) {
+    right: -32vh;
+  }
+
+  @include m.breakpoint(390px) {
+    right: -38vh;
   }
 }

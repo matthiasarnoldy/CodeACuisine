@@ -34,9 +34,11 @@ export class App implements OnInit {
    * @param url The current URL after redirects
    */
   private updateBodyClass(url: string): void {
-    document.body.classList.remove('home', 'recipes', 'about', 'contact');
+    document.body.classList.remove('home', 'generate-recipe', 'recipes', 'about', 'contact');
     if (url === '/home' || url === '/') {
       document.body.classList.add('home');
+    } else if (url.startsWith('/generate-recipe')) {
+      document.body.classList.add('generate-recipe');
     } else if (url.startsWith('/recipes')) {
       document.body.classList.add('recipes');
     } else if (url.startsWith('/about')) {

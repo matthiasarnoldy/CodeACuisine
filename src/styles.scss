@@ -46,3 +46,23 @@ body.home {
         display: block;
     }
 }
+
+body.generate-recipe {
+    position: relative;
+    height: 100vh;
+    padding: 0 68px;
+    overflow: hidden;
+    background-color: v.$white;
+
+    @include m.breakpoint(768px) {
+        padding: 0 32px;
+    }
+
+    @include m.breakpoint(600px) {
+        padding: 0 16px;
+    }
+
+    .header__logo--dark {
+        display: block;
+    }
+}

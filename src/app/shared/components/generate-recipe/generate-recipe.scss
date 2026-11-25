@@ -1,0 +1,36 @@
+@use "../../../styles/abstract/mixins" as m;
+@use "../../../styles/abstract/variables" as v;
+
+.generate__recipe {
+    @include m.flexC($gap: 24px);
+
+    h2 {
+        padding: 16px;
+    }
+}
+
+.generate__recipe--content {
+    width: 100%;
+    @include m.flexC($gap: 64px);
+}
+
+.ingredient__cards {
+    @include m.flexR($gap: 32px);
+    width: 100%;
+}
+
+.ingredient__card {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: rgba(v.$primaryGreen, 0.3);
+
+    &--add {
+        @include m.flexR($gap: 32px);
+    }
+}
+
+.button__next {
+    align-self: flex-end;
+}

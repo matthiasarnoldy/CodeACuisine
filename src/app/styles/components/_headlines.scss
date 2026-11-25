@@ -9,6 +9,14 @@ h1 {
     color: v.$primaryCream;
 }
 
+h2 {
+    font-family: "Quicksand";
+    font-size: clamp(32px, 1.96vw + 25.71px, 54px);
+    font-weight: 600;
+    line-height: 1.0;
+    color: #1E5515;
+}
+
 h3 {
     font-family: "Quicksand";
     font-size: clamp(24px, 1.5vw + 19.2px, 48px);
@@ -23,4 +31,12 @@ h4 {
     font-weight: 500;
     line-height: 1.2;
     color: v.$primaryCream;
+}
+
+h5 {
+    font-family: "Quicksand";
+    font-size: clamp(18px, 0.54vw + 16.29px, 24px);
+    font-weight: 500;
+    line-height: 1.2;
+    color: #10310B;
 }

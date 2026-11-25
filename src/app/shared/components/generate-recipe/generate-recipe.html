@@ -6,9 +6,20 @@
         <section class="ingredient__cards">
             <form class="ingredient__card ingredient__card--add">
                 <fieldset>
-                    <legend>Ingredient</legend>
-                    <label for="ingredient"></label>
-                    <input type="text" id="ingredient" name="ingredient">
+                    <label for="ingredient">Ingredient</label>
+                    <input class="input__ingredient input__ingredient--search" type="text" id="ingredient" name="ingredient" maxlength="38">
+                </fieldset>
+                <fieldset>
+                    <label for="serving">Serving size</label>
+                    <div class="ingredient__card--serving">
+                        <input class="input__ingredient input__ingredient--size" type="text" id="serving" name="serving" placeholder="100" maxlength="4">
+                        <select class="input__ingredient input__ingredient--dropdown" id="unit" name="unit">
+                            <option value="gram" selected>gram</option>
+                            <option value="ml">ml</option>
+                            <option value="pieces">piece(s)</option>
+                            </select>
+                        <button class="button button__add--green"></button>
+                    </div>
                 </fieldset>
             </form>
             <div class="ingredient__card">t</div>

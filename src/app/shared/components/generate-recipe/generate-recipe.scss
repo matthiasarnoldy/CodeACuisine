@@ -15,8 +15,19 @@
 }
 
 .ingredient__cards {
-    @include m.flexR($gap: 32px);
+    @include m.flexR($align: flex-start, $gap: 32px);
     width: 100%;
+}
+
+form {
+    font-family: Quicksand;
+    font-weight: 500;
+    font-size: 20px;
+    color: #10310B;
+}
+
+fieldset {
+    border: none;
 }
 
 .ingredient__card {
@@ -27,8 +38,29 @@
     background-color: rgba(v.$primaryGreen, 0.3);
 
     &--add {
-        @include m.flexR($gap: 32px);
+        @include m.flexR($align: flex-start, $gap: 32px);
+
+        fieldset {
+            @include m.flexC($align: flex-start, $gap: 16px);
+        }
+
+        fieldset:first-child {
+            flex: 1 1 auto;
+        }
+
+        fieldset:last-child {
+            flex: 0 0 auto;
+        }
+
+        .button__add--green {
+            border: none;
+            background: transparent;
+        }
     }
+}
+
+.ingredient__card--serving {
+    @include m.flexR($gap: 8px);
 }
 
 .button__next {

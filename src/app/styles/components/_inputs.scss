@@ -1,0 +1,26 @@
+@use "../abstract/mixins" as m;
+@use "../abstract/variables" as v;
+@use "../abstract/icons" as i;
+
+.input__ingredient {
+    padding: 8px 12px;
+    background-color: v.$primaryCream;
+    border: none;
+    border-radius: 20px;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:focus {
+        outline: none;
+    }
+
+    &--search {
+        width: 100%;
+    }
+
+    &--size {
+        width: 60px;
+        text-align: center;
+    }
+}

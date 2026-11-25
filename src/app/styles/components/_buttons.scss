@@ -93,3 +93,14 @@ $btn-icons: (
         }
     }
 }
+
+@each $key, $data in $btn-icons {
+    .button__#{$key}--background {
+        background-color: transparent;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: v.$primaryCream;
+        }
+    }
+}

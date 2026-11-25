@@ -52,9 +52,8 @@ fieldset {
             flex: 0 0 auto;
         }
 
-        .button__add--green {
-            border: none;
-            background: transparent;
+        .button__add--green.button__add--background {
+            padding: 6px;
         }
     }
 }

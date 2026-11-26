@@ -19,18 +19,11 @@
     width: 100%;
 }
 
-form {
+.ingredient__card {
     font-family: Quicksand;
     font-weight: 500;
     font-size: 20px;
     color: #10310B;
-}
-
-fieldset {
-    border: none;
-}
-
-.ingredient__card {
     flex: 1 1 0;
     min-width: 0;
     padding: 25px;
@@ -41,6 +34,8 @@ fieldset {
         @include m.flexR($align: flex-start, $gap: 32px);
 
         fieldset {
+            border: none;
+
             @include m.flexC($align: flex-start, $gap: 16px);
         }
 
@@ -52,7 +47,7 @@ fieldset {
             flex: 0 0 auto;
         }
 
-        .button__add--green.button__add--background {
+        .button__add--green.button__add--bgCream {
             padding: 6px;
         }
     }

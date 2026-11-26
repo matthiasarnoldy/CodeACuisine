@@ -6,6 +6,6 @@ import { Header } from "../header/header";
   selector: 'app-generate-recipe',
   templateUrl: './generate-recipe.html',
   styleUrl: './generate-recipe.scss',
-  imports: [Header, RouterLink],
+  imports: [Header], // RouterLink
 })
 export class GenerateRecipe {}

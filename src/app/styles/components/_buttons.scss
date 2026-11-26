@@ -4,6 +4,8 @@
 
 $btn-icons: (
     'add': ('w': 24px, 'h': 24px),
+    'edit': ('w': 19px, 'h': 19px),
+    'delete': ('w': 19px, 'h': 19px),
     'arrow-dropdown': ('w': 10px, 'h': 5px),
     'arrow-left': ('w': 22px, 'h': 15px),
     'arrow-right': ('w': 26px, 'h': 15px),
@@ -95,12 +97,23 @@ $btn-icons: (
 }
 
 @each $key, $data in $btn-icons {
-    .button__#{$key}--background {
+    .button__#{$key}--bgCream {
         background-color: transparent;
         border-radius: 5px;
 
         &:hover {
             background-color: v.$primaryCream;
+        }
+    }
+}
+
+@each $key, $data in $btn-icons {
+    .button__#{$key}--bgGreen {
+        background-color: transparent;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: v.$primaryGreen;
         }
     }
 }

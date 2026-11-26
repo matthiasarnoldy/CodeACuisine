@@ -113,7 +113,7 @@ $btn-icons: (
         border-radius: 5px;
 
         &:hover {
-            background-color: v.$primaryGreen;
+            background-color: rgba(v.$primaryGreen, 0.3);
         }
     }
 }

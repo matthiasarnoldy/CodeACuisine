@@ -57,6 +57,19 @@
     @include m.flexR($gap: 8px);
 }
 
+.ingredient__list {
+    font-size: 18px;
+    padding: 6px;
+    list-style-position: inside;
+    list-style: disc;
+
+    li {
+        padding: 2px 4px;
+
+        @include m.flexR($justify: space-between);
+    }
+}
+
 .button__next {
     align-self: flex-end;
 }

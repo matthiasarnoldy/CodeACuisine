@@ -4,8 +4,8 @@
 
 $btn-icons: (
     'add': ('w': 24px, 'h': 24px),
-    'edit': ('w': 19px, 'h': 19px),
-    'delete': ('w': 19px, 'h': 19px),
+    'edit': ('w': 24px, 'h': 24px),
+    'delete': ('w': 24px, 'h': 24px),
     'arrow-dropdown': ('w': 10px, 'h': 5px),
     'arrow-left': ('w': 22px, 'h': 15px),
     'arrow-right': ('w': 26px, 'h': 15px),
@@ -75,6 +75,8 @@ $btn-icons: (
             display: inline-block;
             background-image: url('#{i.icon($key, "%23396039")}');
             background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
             vertical-align: middle;
             width: map-get($data, 'w');
             height: map-get($data, 'h');
@@ -89,6 +91,8 @@ $btn-icons: (
             display: inline-block;
             background-image: url('#{i.icon($key, "%23FAF0E6")}');
             background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
             vertical-align: middle;
             width: map-get($data, 'w');
             height: map-get($data, 'h');

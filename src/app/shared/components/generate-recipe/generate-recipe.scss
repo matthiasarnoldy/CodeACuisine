@@ -31,6 +31,8 @@
     background-color: rgba(v.$primaryGreen, 0.3);
 
     &--add {
+        min-height: 210px;
+
         @include m.flexR($align: flex-start, $gap: 32px);
 
         fieldset {
@@ -58,15 +60,37 @@
 }
 
 .ingredient__list {
+    min-height: 180px;
     font-size: 18px;
-    padding: 6px;
-    list-style-position: inside;
-    list-style: disc;
+    padding: 6px 0;
+    list-style: none;
+    margin: 0;
 
     li {
-        padding: 2px 4px;
+        position: relative;
+        padding: 4px 4px 4px 20px;
+        border-radius: 10px;
 
-        @include m.flexR($justify: space-between);
+        &::before {
+            content: '•';
+            position: absolute;
+            left: 6px;
+        }
+
+        .ingredient__row {
+            @include m.flexR($gap: 16px);
+        }
+
+        .ingredient__actions {
+            margin-left: auto;
+
+            @include m.flexR($gap: 16px);
+        }
+
+        &:hover {
+            background-color: v.$primaryCream;
+            transition: background-color 100ms;
+        }
     }
 }
 

@@ -1,0 +1,27 @@
+@use "../../../styles/abstract/mixins" as m;
+@use "../../../styles/abstract/variables" as v;
+
+.button__arrow-left--green {
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1E5515;
+    background-color: transparent;
+
+    @include m.flexR($direction: row-reverse, $gap: 10px)
+}
+
+.preferences {
+    @include m.flexC($gap: 56px);
+
+    .preferences__content {
+        font-size: 20px;
+        font-weight: 500;
+        color: #1E5515;
+        @include m.flexC($gap: 32px);
+    }
+}
+
+.preferences__portions {
+    @include m.flexR($justify: space-between, $gap: 120px);
+}

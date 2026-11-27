@@ -35,6 +35,14 @@ h4 {
 
 h5 {
     font-family: "Quicksand";
+    font-size: clamp(24px, 0.36vw + 22.86px, 28px);
+    font-weight: 600;
+    line-height: 1.2;
+    color: #10310B;
+}
+
+h6 {
+    font-family: "Quicksand";
     font-size: clamp(18px, 0.54vw + 16.29px, 24px);
     font-weight: 500;
     line-height: 1.2;
